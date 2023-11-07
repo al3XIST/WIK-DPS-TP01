@@ -1,12 +1,9 @@
-// Importation des bibliothèques nécessaires
 use actix_web::{get, web, App, HttpResponse, HttpServer, Responder};
 use serde_json::{Map, Value};
 
 // Définition d'une route HTTP pour le chemin "/ping"
 #[get("/ping")]
-
 async fn header(req: web::HttpRequest) -> impl Responder {
-
     // Accédez aux en-têtes HTTP de la requête
     let headers = req.headers();
 
@@ -23,13 +20,16 @@ async fn header(req: web::HttpRequest) -> impl Responder {
 // Fonction principale
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
+    
+    let port = 8081;  // Variable port pour choisir le port d'entrée du site web 
+    let host = "127.0.0.1"; 
 
     // Configuration du serveur HTTP
     HttpServer::new(|| {
         App::new()
             .service(header) // Associe la route "/ping" à la fonction header
     })
-    .bind("127.0.0.1:8080")? // Lie le serveur à l'adresse et au port spécifiés
-    .run() // Lance le serveur 
+    .bind(format!("{}:{}", host, port))? // Lie le serveur à l'adresse et au port spécifiés
+    .run() // Lance le serveur
     .await // Attend que le serveur s'arrête
 }
