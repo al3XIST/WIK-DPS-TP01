@@ -27,7 +27,10 @@ Pour exécuter l'application, suivez ces étapes :
    
    "cargo run"
 
-4. Le serveur Actix Web sera maintenant en cours d'exécution. Vous pouvez accéder à l'URL `http://127.0.0.1:8080/ping` pour obtenir les en-têtes HTTP en format JSON.
+4. Modifier le port d'entrée via la variable "port" par défaut "8081":
+   
+
+5. Le serveur Actix Web sera maintenant en cours d'exécution. Vous pouvez accéder à l'URL `http://127.0.0.1:8081/ping` pour obtenir les en-têtes HTTP en format JSON.
 
 ## Comment ça fonctionne
 
