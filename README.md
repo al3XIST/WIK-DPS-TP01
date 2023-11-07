@@ -15,12 +15,12 @@ Pour exécuter l'application, suivez ces étapes :
 
 1. Clonez ce dépôt sur votre système :
    
-   "git clone https://github.com/votre-utilisateur/actix-web-example.git"
+   "git clone https://github.com/al3XIST/WIK-DPS-TP01.git"
    
 
 2. Accédez au répertoire du projet :
 
-   "cd actix-web-example"
+   "cd WIK-DPS-TP01"
    
 
 3. Exécutez l'application à l'aide de Cargo :
