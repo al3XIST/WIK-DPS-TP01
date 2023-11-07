@@ -34,5 +34,5 @@ Pour exécuter l'application, suivez ces étapes :
 
 ## Comment ça fonctionne
 
-L'application utilise Actix Web pour créer un serveur HTTP. Elle définit une route `/ping` qui correspond à la fonction `hello`. Lorsque quelqu'un accède à cette route, la fonction `header` est appelée. Cette fonction récupère les en-têtes HTTP de la requête, les convertit en JSON et les renvoie en réponse HTTP.
+L'application utilise Actix Web pour créer un serveur HTTP. Elle définit une route `/ping` qui correspond à la fonction `header`. Lorsque quelqu'un accède à cette route, la fonction `header` est appelée. Cette fonction récupère les en-têtes HTTP de la requête, les convertit en JSON et les renvoie en réponse HTTP.
 
