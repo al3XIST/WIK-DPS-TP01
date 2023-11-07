@@ -1,7 +1,5 @@
 # WIK-DPS-TP01
 
-# Actix Web Example
-
 Ce projet est un exemple d'application web simple utilisant le framework Actix Web en Rust. Il crée un serveur HTTP qui écoute sur l'adresse "127.0.0.1" et le port "8080". Lorsqu'un utilisateur accède à l'URL "/ping" du serveur, les en-têtes HTTP de la requête sont renvoyés en tant que réponse JSON.
 
 ## Prérequis
